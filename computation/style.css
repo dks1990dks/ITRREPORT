@@ -1,0 +1,114 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+            /* background-color: black; */
+        }
+
+
+        .container1 {
+            width: 210mm;
+            min-height: 297mm;
+            border: 1px solid #333;
+            margin: auto;
+            background-color: #fff;
+            font-size: 13px;
+        }
+
+        .container1 .basicdetails {
+            width: 90%;
+            border: 1px solid #333;
+            margin: 34px auto;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+        .basicdetails table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .basicdetails table td {
+            /* padding: 8px; */
+            vertical-align: top;
+        }
+
+        .basicdetails table td.label {
+            font-weight: bold;
+            width: 25%;
+            padding-left: 10px;
+        }
+
+        .basicdetails table td.data {
+            width: 25%;
+        }
+
+        .container1 h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .computation {
+            width: 90%;
+            margin: 10px auto;
+            padding: 5px;
+        }
+
+        /* .computation table {
+            width: 100%;
+            border-collapse: collapse;
+        } */
+
+        .computation table td.label,
+        .computation table td.data {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .computation table td.label,
+        td.label-1 {
+            padding-top: 10px;
+        }
+        .bank-details{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bank-details h3{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .bank-details table{
+            width: 90%;
+            margin: auto;
+            border: 1px solid #333;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .bank-details table th{
+            padding: 5px;
+            border-bottom: 1px solid #333;
+            border-right: 1px solid #333;
+            border-left: 1px solid #333;
+            margin: 0;
+            
+        }
+        .bank-details table td{
+            text-align: center;
+            /* border-bottom: 1px solid #333; */
+            border-right: 1px solid #333;
+
+        }
+        .tds-total{
+            border-top: 1px solid #333;
+        }
+        .itrfilleddetails table h4{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }

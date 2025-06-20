@@ -1,0 +1,154 @@
+{
+    "personalInfo": {
+        "fatherName": "VINAY MISHRA",
+        "orgFirmInfo": {
+            "AssesseeName": {
+                "SurNameOrOrgName": "MISHRA"
+            },
+            "DateOFFormOrIncorp": "2002-07-02",
+            "StatusOrCompanyType": "IND"
+        },
+        "address": {
+            "localityOrArea": "Surat City",
+            "countryCodeMobileNoSec": 91,
+            "residenceNo": "21 MANGALBHAVAN SOCIETY",
+            "cityOrTownOrDistrict": "SURAT",
+            "mobileNo": 8460300465,
+            "emailAddress": "DKSAW1990@GMAIL.COM",
+            "countryCodeMobile": 91,
+            "phone": {},
+            "countryCode": "91",
+            "roadOrStreet": "Dindoli B.O",
+            "pinCode": 394210,
+            "stateCode": "11",
+            "residenceName": "NEAR MANAV KENDR"
+        },
+        "filingStatus": {
+            "residentialStatus": "RES",
+            "LEIDtls": {
+                "ValidUptoDate": ""
+            }
+        },
+        "assesseVerPan": "GELPM1877J",
+        "assesseeName": {
+            "firstName": "AMITKUMAR",
+            "surNameOrOrgName": "MISHRA",
+            "middleName": "VINAY"
+        },
+        "dob": "2002-07-02",
+        "aadhaarCardNo": "OTk4MDQ2ODAyMzQ4",
+        "pan": "GELPM1877J",
+        "assesseeVerName": "AMITKUMAR VINAY MISHRA",
+        "status": "IND",
+        "capacity": "S"
+    },
+    "orgFirmInfo": null,
+    "Form10BA": null,
+    "form10DA": null,
+    "form3CD": {
+        "PartAOI": {
+            "ScheduleTPSAFlg": "N",
+            "Amount": 0
+        }
+    },
+    "scheduleAL": null,
+    "form3CE": null,
+    "form26as": {
+        "scheduleOS": {
+            "incOthThanOwnRaceHorse": {
+                "dividendGross": 0,
+                "DividendOthThan22e": 0
+            }
+        },
+        "persumptiveInc44ADA": {
+            "grsReceipt": 0
+        },
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 0,
+                "othSrcNatureDesc": "DIV"
+            }
+        ]
+    },
+    "form10IBICID": null,
+    "otherSourceIncome": null,
+    "form10IE": null,
+    "form10CCE": null,
+    "form10CCF": null,
+    "form10CCD": null,
+    "itba": null,
+    "form64D": null,
+    "verification": {
+        "declaration": {
+            "fatherName": "VINAY MISHRA",
+            "assesseeVerPAN": "GELPM1877J",
+            "assesseeVerName": "AMITKUMAR VINAY MISHRA"
+        },
+        "capacity": "S"
+    },
+    "bankAccountDtls": [
+        {
+            "addtnlBankDetails": [
+                {
+                    "useForRefund": "true",
+                    "bankAccountNo": "4445457412",
+                    "bankName": "KOTAK MAHINDRA BANK LIMITED",
+                    "ifsccode": "KKBK0002865",
+                    "AccountType": "SB"
+                }
+            ]
+        }
+    ],
+    "form56F": null,
+    "insights": {
+        "scheduleOS": {
+            "incOthThanOwnRaceHorse": {
+                "dividendGross": 0,
+                "DividendOthThan22e": 0
+            }
+        },
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 0,
+                "othSrcNatureDesc": "DIV"
+            }
+        ]
+    },
+    "form10CCB": null,
+    "form29b": null,
+    "scheduleCFL": null,
+    "filingStatus": {
+        "SeventhProvisio139": "N"
+    },
+    "form24q": null,
+    "partAGEN2": null,
+    "ScheduleEI": null,
+    "Form10A": null,
+    "Form10IFA": null,
+    "ais": null,
+    "ScheduleESOP": null,
+    "formCCBA": null,
+    "auditInfo": null,
+    "incDeductionsOthIncCPC": null,
+    "formCCBD": null,
+    "formCCBC": null,
+    "formCCBB": null,
+    "form67": null,
+    "assesseeRep": null,
+    "form66": null,
+    "form10E": null,
+    "Schedule80RA": null,
+    "Form10IA": null,
+    "Schedule80G": null,
+    "form64A": null,
+    "Form10AB": null,
+    "Form10IEA": null,
+    "form10IF": null,
+    "form10AC": null,
+    "form10BOR10BB": null,
+    "natOfBus": null,
+    "filingReturn": null,
+    "lastFiledITR": null,
+    "form3CEA": null,
+    "form3CEB": null
+}

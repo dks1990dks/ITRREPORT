@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Itr Computaion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="section1">    
+<h1>Genrate Computation</h1>
+<div class="assessdetail">
+<label>Assessee Name: <input type="text" id="name" placeholder="Enter Assessee Name"> </label>
+<label>Assessment Year: <select id="a-year">
+     <option value="">2022-2023</option>
+     <option value="">2023-2024</option>
+     <option value="">2025-2026</option>
+    </select> </label>
+<label>A/c.Year Ending: <p class="y-end">31-03-2025</p> </label>
+<label>Address: <input type="text" id="address1" placeholder="Address1..">    
+<label>Address: <input type="text" id="address2" placeholder="Address2..">
+<label>Address: <input type="text" id="address3" placeholder="Address3.."></label>
+<label>City : <input type="text"id="city" ></label>
+<label>Pin code : <input type="text"id="pincode" ></label>
+<label>State : <input type="text"id="state"></label>
+<label>Mobile No. : <input type="text"id="mobileNO"></label>
+<label>Pan No. : <input type="text"id="PanNO"></label>
+<label>Pan No. : <input type="text"id="PanNO"></label>
+<label>Status: <select id="status">
+     <option value="">Individual</option>
+     <option value="">Huf</option>
+     <option value="">Company</option>
+    </select>
+</label>
+<label>Resident Status: <select id="individalstatus">
+     <option value="">(1) Resident</option>
+     <option value="">(2) Resident but Not ordinory</option>
+     <option value="">(3) Non Resident</option>
+    </select>
+</label>
+
+<label>Gender: <select id="status">
+     <option value="">Male</option>
+     <option value="">Femal</option>
+    </select>
+</label>
+<label >Date of Birth : <input type="date"id="dob"> </label>
+<label >Adhar No. : <input type="number"id="adhar"> </label>
+<label >Email Id. : <input type="email"id="emailID"> </label>
+<label >Father Name : <input type="text" id="fatherName" ></label>
+
+</div>
+</section>
+<section id="section2">
+    <div class="salaryIncome">
+    <h1> COMPUTATION OF TOTAL INCOME <select id="regime"><option>Old Regime</option><option>New Regime</option></select> </h1>
+    <h1><label for="">Income from Salary (Chapter IV A) : <input type="number" name="" id="netsalary"></label></h1>
+    <label id="employer">Employer <Input type="text" ></Input></label>
+    <label id="E-address">Address <Input type="text" ></Input></label>
+    <label for="salary">Salary</label>
+    <input type="number" id"salary" >
+    <label >Less: Standard Deduction u/s 16(ia)</label>
+    <input type="number" id"sless" >
+    </div>
+    <div class="businessIncome">
+        <h1><label for="">Income from Business or Profession (Chapter IV D) : <input type="number" id="bIncome" placeholder="income"></label></h1><br>
+        <label for="">Income u/s 44AD : <input type="number"id="incomeus44ad"></label><br>
+        <h3>Income Declared u/s 44 AD Profit from Profit</h3>
+        <label for="">Gross Receipts/Turnover : <input type="number" id="grossTurnover"> </label><br>
+        <label for="">Book Profit : <input type="number" id="bookProfit"> </label><span id="bp%">32%</span><br>
+        <label for="">Deemed Profit : <input type="number" id="deemedProfit"> </label><span id="bp%">32%</span><br>
+        <label for="">Net Profit Declared : <input type="number" id="netProfit"> </label><span id="bp%">32%</span>
+    </div>
+    <div class="otherIncome">
+        <h1><label for="">Income from Other Sources (Chapter IV F) : <input type="number" id="OtherIncome"></label></h1>
+        <h3>Interest Income</h3>
+        <label for="">Savings account interest : <input type="number" id="sbIncome"></label><br>
+        <label for="">Fixed deposit interest : <input type="number" id="fdIncome"></label><br>
+        <label for="">Recurring deposit interest : <input type="number" id="rdIncome"></label><br>
+        <label for="">Interest on income tax refund : <input type="number" id="itIncome"></label>
+         <h3>Dividend Income</h3>
+        <label for="">From shares or mutual funds : <input type="number" id="sbIncome"></label><br>
+        <h3>Gifts received:</h3>
+        <label for="">Above ₹50,000 from non-relatives (taxable under certain conditions) : <input type="number" id="sbIncome"></label><br>
+        <h3>Winnings:</h3>
+        <label for="">Lottery, crossword puzzles, card games, betting, gambling (taxed at flat 30%) : <input type="number" id="sbIncome"></label><br>
+        <h3>Rent Income:</h3>
+        <label for="">Income from letting out machinery, plant, furniture : <input type="number" id="sbIncome"></label><br>
+        <h3>Commission or brokerage:</h3>
+        <label for="">Commission or brokerage : <input type="number" id="sbIncome"></label>    
+    </div>
+    <h2>Gross Total Income <span>750000</span></h2>
+    <h1>DEDUCTION UNDER CHAPTER VI-A</h1>
+
+<h3>Deduction u/s 80C</h3>
+
+<form>
+  <label for="life_insurance">Life insurance premiums:</label>
+  <input type="number" id="life_insurance" name="life_insurance" placeholder="₹">
+  <br><br>
+
+  <label for="ppf">Public Provident Fund (PPF):</label>
+  <input type="number" id="ppf" name="ppf" placeholder="₹">
+  <br><br>
+
+  <label for="elss">Equity Linked Saving Scheme (ELSS):</label>
+  <input type="number" id="elss" name="elss" placeholder="₹">
+  <br><br>
+
+  <label for="epf">Employees’ Provident Fund (EPF):</label>
+  <input type="number" id="epf" name="epf" placeholder="₹">
+  <br><br>
+
+  <label for="nsc">National Savings Certificate (NSC):</label>
+  <input type="number" id="nsc" name="nsc" placeholder="₹">
+  <br><br>
+
+  <label for="home_loan_principal">Principal on home loan:</label>
+  <input type="number" id="home_loan_principal" name="home_loan_principal" placeholder="₹">
+  <br><br>
+
+  <label for="tuition_fees">Tuition fees for children:</label>
+  <input type="number" id="tuition_fees" name="tuition_fees" placeholder="₹">
+  <br><br>
+
+  <label for="total_80C"><strong>Total 80C Deduction (Max ₹1,50,000):</strong></label>
+  <input type="number" id="total_80C" name="total_80C" readonly placeholder="Auto-calculated">
+</form>
+
+    <h3>Deduction u/s 80CCC</h3>
+<label for="section80CCC">Pension plans (LIC, etc.): </label>
+<input type="number" id="section80CCC" name="section80CCC" placeholder="Included in ₹1,50,000 limit">
+
+<h3>Deduction u/s 80CCD(1)</h3>
+<label for="section80CCD1">NPS (self-contribution): </label>
+<input type="number" id="section80CCD1" name="section80CCD1">
+
+<h3>Deduction u/s 80CCD(1B)</h3>
+<label for="section80CCD1B">NPS (additional contribution): </label>
+<input type="number" id="section80CCD1B" name="section80CCD1B" placeholder="Max ₹50,000">
+
+<h3>Deduction u/s 80CCD(2)</h3>
+<label for="section80CCD2">NPS (employer contribution): </label>
+<input type="number" id="section80CCD2" name="section80CCD2">
+
+<h3>Deduction u/s 80D</h3>
+<label for="section80D">Medical insurance premium: </label>
+<input type="number" id="section80D" name="section80D">
+
+<h3>Deduction u/s 80DD</h3>
+<label for="section80DD">Maintenance of disabled dependent: </label>
+<input type="number" id="section80DD" name="section80DD">
+
+<h3>Deduction u/s 80DDB</h3>
+<label for="section80DDB">Treatment of specified diseases: </label>
+<input type="number" id="section80DDB" name="section80DDB">
+
+<h3>Deduction u/s 80E</h3>
+<label for="section80E">Interest on education loan: </label>
+<input type="number" id="section80E" name="section80E">
+
+<h3>Deduction u/s 80EE</h3>
+<label for="section80EE">Interest on home loan (first-time buyers): </label>
+<input type="number" id="section80EE" name="section80EE">
+
+<h3>Deduction u/s 80EEA</h3>
+<label for="section80EEA">Home loan (affordable housing): </label>
+<input type="number" id="section80EEA" name="section80EEA">
+
+<h3>Deduction u/s 80G</h3>
+<label for="section80G">Donations to charitable institutions: </label>
+<input type="number" id="section80G" name="section80G">
+
+<h3>Deduction u/s 80GG</h3>
+<label for="section80GG">Rent paid (if no HRA received): </label>
+<input type="number" id="section80GG" name="section80GG">
+
+<h3>Deduction u/s 80TTA</h3>
+<label for="section80TTA">Interest on savings account: </label>
+<input type="number" id="section80TTA" name="section80TTA">
+
+<h3>Deduction u/s 80TTB</h3>
+<label for="section80TTB">Interest for senior citizens (FD, savings): </label>
+<input type="number" id="section80TTB" name="section80TTB">
+
+<h3>Deduction u/s 80U</h3>
+<label for="section80U">Disability (for self): </label>
+<input type="number" id="section80U" name="section80U">
+
+<h1>TOTAL DEDUCTION UNDER CHAPTER VI-A <input type="number"></h1>
+<h3>TotalIncome<input type="number"></h1>
+<h3>Rounded Off u/s.288A<input type="number"></h1>
+<h1>COMPUTATION OF TAX PAYABLE</h1>
+<h3>Gross Tax on Rs.436800 (Normal) <input type="number"></h3>
+<h3>Less: Tax Rebate u/s.87(A) <input type="number"></h3>
+<h3>Tax Payable <input type="number"></h3>
+<h2>Less</h2>
+<h3>Tax Deducted at Sources :</h3>
+<h3>Other than Salary (u/s.194H- Gross Amount 8407)<input type="number"></h3>
+<h3>Total Prepaid Taxes <input type="number"></h3>
+<h3>Tax Refundable <span>123</span></h3>
+<h2>Rounded Off <span>120</span></h2>
+
+
+</section>
+<section class="section3">
+    <h3>Bank Account Details</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>IFSC</th>
+      <th>Bank Name</th>
+      <th>A/c No.</th>
+      <th>Primary</th>
+      <th>Account Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BARB0SALABA</td>
+      <td>BANK OF BARODA</td>
+      <td>02620100005203</td>
+      <td>Yes</td>
+      <td>Saving</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="section4">
+    <h3>Schedule-TDS2 (Form No. 16A – TDS Details)</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>TAN</th>
+      <th>Name of Deductor</th>
+      <th>Head of Income</th>
+      <th>Total Tax Deducted</th>
+      <th>Amount Claimed (This Year)</th>
+      <th>Gross Amount (F.Y.)</th>
+      <th>Amount C/F</th>
+      <th>Amount B/F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>SRTS24497E</td>
+      <td>S R RAMSONS PRIVATE LIMITED</td>
+      <td>OS</td>
+      <td>8407</td>
+      <td>420</td>
+      <td>2023</td>
+      <td>0</td>
+      <td>420</td>
+    </tr>
+    <tr>
+      <td colspan="4"><strong>Grand Total</strong></td>
+      <td><strong>8407</strong></td>
+      <td><strong>420</strong></td>
+      <td colspan="3"><strong>420</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="section5">
+    <h3>Income / Exemption / Deduction – Old vs New Regime</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Old Regime</th>
+      <th>New Regime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Salary Income</td>
+      <td>₹3,66,000</td>
+      <td>₹3,66,000</td>
+    </tr>
+    <tr>
+      <td>Standard Deduction</td>
+      <td>-₹50,000</td>
+      <td>-₹50,000</td>
+    </tr>
+    <tr>
+      <td>Other Source Income</td>
+      <td>₹1,21,322</td>
+      <td>₹1,21,322</td>
+    </tr>
+    <tr>
+      <td>Deductions VIA (Excl. 80CCD(2), 80JJAA)</td>
+      <td>-₹522</td>
+      <td>Nil</td>
+    </tr>
+    <tr>
+      <th>Total Taxable</th>
+      <th>₹4,36,800</th>
+      <th>₹4,37,322</th>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="section6">
+    <h3>Tax Calculation</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Slab</th>
+      <th>Old Regime Rate</th>
+      <th>Old Tax</th>
+      <th>New Regime Rate</th>
+      <th>New Tax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Up to ₹2,50,000 / ₹3,00,000</td>
+      <td>0%</td>
+      <td>Nil</td>
+      <td>0%</td>
+      <td>Nil</td>
+    </tr>
+    <tr>
+      <td>₹2,50,000 - ₹5,00,000 / ₹3,00,000 - ₹6,00,000</td>
+      <td>5%</td>
+      <td>₹9,340</td>
+      <td>5%</td>
+      <td>₹6,866</td>
+    </tr>
+    <tr>
+      <td>Next slabs</td>
+      <td>20%, 30%</td>
+      <td>Nil</td>
+      <td>10%–30%</td>
+      <td>Nil</td>
+    </tr>
+    <tr>
+      <th>Total Tax</th>
+      <th colspan="2">₹9,340</th>
+      <th colspan="2">₹6,866</th>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Tax Difference (Old - New)</strong></td>
+      <td colspan="2"><strong>₹2,474</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+<section class="section7">
+    <h3>Other Details</h3>
+<p><strong>Receipt No.:</strong> 273263240310724</p>
+<p><strong>Date:</strong> 31-07-2024</p>
+<p><strong>Source:</strong> www.i-tax.in</p>
+<p><strong>Support:</strong> IVR Mobile No. 95101-56789, 95100-56789</p>
+
+</section>
+</body>
+</html>

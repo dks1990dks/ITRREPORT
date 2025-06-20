@@ -1,0 +1,187 @@
+{
+    "personalInfo": {
+        "fatherName": "BAJRANGBALI SHUKLA",
+        "orgFirmInfo": {
+            "AssesseeName": {
+                "SurNameOrOrgName": "SHUKLA"
+            },
+            "DateOFFormOrIncorp": "1985-04-01",
+            "StatusOrCompanyType": "IND"
+        },
+        "address": {
+            "emailAddress": "officeaccounts2015@yahoo.com",
+            "localityOrArea": "SURAT",
+            "phone": {},
+            "roadOrStreet": "GODADARA",
+            "pinCode": 395010,
+            "residenceNo": "P 301 VRUNDAVAN PARK SOC",
+            "stateCode": "11",
+            "mobileNo": 8141546419
+        },
+        "filingStatus": {
+            "LEIDtls": {
+                "ValidUptoDate": ""
+            }
+        },
+        "assesseVerPan": "CDDPS7884J",
+        "assesseeName": {
+            "firstName": "HARISH",
+            "surNameOrOrgName": "SHUKLA",
+            "middleName": "BAJRANGBALI"
+        },
+        "dob": "1985-04-01",
+        "aadhaarCardNo": "NjY0NDc4MzE2Mzky",
+        "pan": "CDDPS7884J",
+        "assesseeVerName": "HARISH BAJRANGBALI SHUKLA",
+        "status": "IND",
+        "capacity": "S"
+    },
+    "orgFirmInfo": null,
+    "Form10BA": null,
+    "form10DA": null,
+    "form3CD": {
+        "PartAOI": {
+            "ScheduleTPSAFlg": "N",
+            "Amount": 0
+        }
+    },
+    "scheduleAL": null,
+    "form3CE": null,
+    "form26as": {
+        "tdsOnOthThanSals": {
+            "tdSonOthThanSal": [
+                {
+                    "taxDeductCreditDtls": {
+                        "taxClaimedOwnHands": 3947,
+                        "taxDeductedOwnHands": 3947
+                    },
+                    "TDSCreditName": "S",
+                    "sectionCode": "94C",
+                    "grossAmount": 394780,
+                    "headOfIncome": "BP",
+                    "employerOrDeductorOrCollectDetl": {
+                        "tan": "SRTR02473C",
+                        "employerOrDeductorOrCollecterName": "RAMESHKUMAR NANURAM SARAF"
+                    }
+                }
+            ]
+        },
+        "scheduleOS": {
+            "incOthThanOwnRaceHorse": {}
+        },
+        "persumptiveInc44ADA": {
+            "grsReceipt": 0
+        },
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 570,
+                "othSrcNatureDesc": "SAV"
+            }
+        ]
+    },
+    "form10IBICID": null,
+    "otherSourceIncome": null,
+    "form10IE": null,
+    "form10CCE": null,
+    "form10CCF": null,
+    "form10CCD": null,
+    "itba": null,
+    "form64D": null,
+    "verification": {
+        "declaration": {
+            "fatherName": "BAJRANGBALI SHUKLA",
+            "assesseeVerPAN": "CDDPS7884J",
+            "assesseeVerName": "HARISH BAJRANGBALI SHUKLA"
+        },
+        "capacity": "S"
+    },
+    "bankAccountDtls": [
+        {
+            "addtnlBankDetails": [
+                {
+                    "useForRefund": "true",
+                    "bankAccountNo": "006010101003370",
+                    "bankName": "SURAT NATIONAL COOPERATIVE BANK LIMITED",
+                    "ifsccode": "SUNB0000006"
+                }
+            ]
+        }
+    ],
+    "form56F": null,
+    "insights": {
+        "intrstFrmSavingBank": 570,
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 570,
+                "othSrcNatureDesc": "SAV"
+            }
+        ]
+    },
+    "form10CCB": null,
+    "form29b": null,
+    "scheduleCFL": null,
+    "filingStatus": {
+        "SeventhProvisio139": "N"
+    },
+    "form24q": {
+        "intrstFrmSavingBank": 570,
+        "isActive": false
+    },
+    "partAGEN2": null,
+    "ScheduleEI": null,
+    "Form10A": null,
+    "Form10IFA": null,
+    "ais": null,
+    "ScheduleESOP": null,
+    "formCCBA": null,
+    "auditInfo": null,
+    "incDeductionsOthIncCPC": [
+        {
+            "itrAy": "2025",
+            "othSrcOthAmount": 163,
+            "othSrcNatureDesc": "TAX"
+        }
+    ],
+    "formCCBD": null,
+    "formCCBC": null,
+    "formCCBB": null,
+    "form67": null,
+    "assesseeRep": null,
+    "form66": null,
+    "form10E": null,
+    "Schedule80RA": null,
+    "Form10IA": null,
+    "Schedule80G": null,
+    "form64A": null,
+    "Form10AB": null,
+    "Form10IEA": null,
+    "form10IF": null,
+    "form10AC": null,
+    "form10BOR10BB": null,
+    "natOfBus": null,
+    "filingReturn": null,
+    "lastFiledITR": {
+        "foreignBankDetails": [],
+        "usrDeductUndChapVIAType": {},
+        "natOfBus44AD": [
+            {
+                "codeAD": "16017",
+                "nameOfBusiness": "HARISH BAJRANGBALI SHUKLA"
+            }
+        ],
+        "typeOfHP": "S",
+        "schedule80D": {
+            "Sec80DSelfFamSrCtznHealth": {
+                "SeniorCitizenFlag": null,
+                "ParentSeniorCitizenFlag": null
+            }
+        },
+        "scheduleUD": [],
+        "scheduleMATC": {},
+        "employerCategory": "OTH",
+        "scheduleAMTC": {},
+        "totalNumOfMonths": 0
+    },
+    "form3CEA": null,
+    "form3CEB": null
+}

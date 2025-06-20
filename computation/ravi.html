@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tax Calculation</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: right;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td:first-child, td:nth-child(4) {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<div class="taxcalc bank-details">
+  <h3>Tax Calculation</h3>
+  <table id="taxTable">
+    <thead>
+      <tr>
+        <th colspan="3">Old Regime</th>
+        <th colspan="3">New Regime</th>
+      </tr>
+      <tr>
+        <th>Tax Slab</th>
+        <th>Rate</th>
+        <th>Tax</th>
+        <th>Tax Slab</th>
+        <th>Rate</th>
+        <th>Tax</th>
+      </tr>
+    </thead>
+    <tbody id="taxTableBody"></tbody>
+    <tfoot>
+      <tr>
+        <th></th>
+        <th>Total Tax</th>
+        <th id="oldTotalTax"></th>
+        <th></th>
+        <th>Total Tax</th>
+        <th id="newTotalTax"></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<script>
+  // Sample income input
+  const grossTotalIncome = 950000;
+
+  const oldRegimeSlabs = [
+    { min: 0, max: 250000, rate: 0 },
+    { min: 250000, max: 500000, rate: 5 },
+    { min: 500000, max: 1000000, rate: 20 },
+    { min: 1000000, max: Infinity, rate: 30 }
+  ];
+
+  const newRegimeSlabs = [
+    { min: 0, max: 300000, rate: 0 },
+    { min: 300000, max: 600000, rate: 5 },
+    { min: 600000, max: 900000, rate: 10 },
+    { min: 900000, max: 1200000, rate: 15 },
+    { min: 1200000, max: 1500000, rate: 20 },
+    { min: 1500000, max: Infinity, rate: 30 }
+  ];
+
+  function calculateTax(income, slabs) {
+    let taxBreakdown = [], totalTax = 0;
+    for (const slab of slabs) {
+      if (income > slab.min) {
+        let taxableIncome = Math.min(income, slab.max) - slab.min;
+        let tax = taxableIncome * (slab.rate / 100);
+        taxBreakdown.push({
+          slab: `${slab.min.toLocaleString()} - ${slab.max === Infinity ? 'and above' : slab.max.toLocaleString()}`,
+          rate: `${slab.rate}%`,
+          tax: tax.toFixed(2)
+        });
+        totalTax += tax;
+      } else {
+        taxBreakdown.push({
+          slab: `${slab.min.toLocaleString()} - ${slab.max === Infinity ? 'and above' : slab.max.toLocaleString()}`,
+          rate: `${slab.rate}%`,
+          tax: `0.00`
+        });
+      }
+    }
+    return { taxBreakdown, totalTax: totalTax.toFixed(2) };
+  }
+
+  const oldTax = calculateTax(grossTotalIncome, oldRegimeSlabs);
+  const newTax = calculateTax(grossTotalIncome, newRegimeSlabs);
+
+  const tableBody = document.getElementById("taxTableBody");
+  const maxRows = Math.max(oldTax.taxBreakdown.length, newTax.taxBreakdown.length);
+
+  for (let i = 0; i < maxRows; i++) {
+    const oldRow = oldTax.taxBreakdown[i] || { slab: "", rate: "", tax: "" };
+    const newRow = newTax.taxBreakdown[i] || { slab: "", rate: "", tax: "" };
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${oldRow.slab}</td>
+      <td>${oldRow.rate}</td>
+      <td>${oldRow.tax}</td>
+      <td>${newRow.slab}</td>
+      <td>${newRow.rate}</td>
+      <td>${newRow.tax}</td>
+    `;
+    tableBody.appendChild(tr);
+  }
+
+  document.getElementById("oldTotalTax").textContent = oldTax.totalTax;
+  document.getElementById("newTotalTax").textContent = newTax.totalTax;
+</script>
+
+</body>
+</html>

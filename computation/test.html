@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computation Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Poppins,sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fff;
+        }
+        .container{
+            width: 500px;
+            background-color: rgb(133, 128, 133);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+
+        }
+        .container input{
+            padding: 5px 15px;
+            outline: 0;
+            border: 0;
+            margin: 5px auto;
+            width: 40%;
+            border-radius: 5px;
+            
+        }
+        button{
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px 15px;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+
+        }
+        .container select{
+            padding: 5px 15px;
+            outline: 0;
+            border: 0;
+            width: 40%;
+            border-radius: 5px;
+            margin: 5px auto;
+        }
+        .container select option{
+            padding: 10px 15px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+        }
+    </style>
+<body>
+    <div class="container">
+        <!-- Basic Info -->
+<input type="number" id="ayear" placeholder="Assessment Year" />
+<select id="regime">
+    <option>New Regime</option>
+    <option>Old Regime</option>
+</select>
+<!-- Income & Deductions -->
+ <!---Salary Income-->
+<input type="number" id="gross-salary" placeholder="Gross Salary" />
+<input type="text" id="employer" placeholder="Employer" />
+<input type="text" id="employer-address" placeholder="Employer-address" />
+<input type="number" id="deductionVI6" placeholder="50000"/>
+<!-- <input type="number" id="net-salary" placeholder="Net Salary"/> -->
+<!-- Business Income -->
+ <input type="number" id="Bussiness-Income" placeholder="Business Gross Received"/>
+ <input type="number" id="declairedProfit" placeholder="Declaired Profit % "/>
+
+ 
+<!-- other Income -->
+<input type="number" id="saving-interest" placeholder="Saving Account Interest" />
+<input type="number" id="salesince-income" placeholder="Sales Incentive Income" />
+<input type="number" id="dividend-income" placeholder="Dividend Income" />
+<!-- <input type="number" id="income-from-other-src" placeholder="Income from other sorce" /> -->
+<input type="number" id="gross-total-income" placeholder="Gross Total Income" />
+<input type="number" id="standard-deduction" placeholder="Deduction" />
+
+<!-- Tax Computation -->
+<input id="tax-payable" placeholder="Tax payable" />
+<input type="number" id="rebate-87a" placeholder="Rebate-87a"/>
+<input type="number" id="tax-fee" placeholder="Late fee"/>
+<input type="number" id="gross-tax-liability" placeholder="Tax Liabilities" />
+
+<button id="generateReport">Generate Report </button>
+
+</div>
+
+
+
+
+    <script src="itr1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+{
+    "personalInfo": {
+        "fatherName": "LALO SAW",
+        "orgFirmInfo": {
+            "AssesseeName": {
+                "SurNameOrOrgName": "SAW"
+            },
+            "DateOFFormOrIncorp": "1990-06-05",
+            "StatusOrCompanyType": "IND"
+        },
+        "address": {
+            "localityOrArea": "SURAT",
+            "countryCodeMobileNoSec": 91,
+            "residenceNo": "J-507,INDIA TEXTILE MARKET",
+            "cityOrTownOrDistrict": "Surat Textile Market S.O",
+            "mobileNo": 9737833333,
+            "emailAddressSecondary": "AARTIDEEPAK53@GMAIL.COM",
+            "mobileNoSec": 9265087561,
+            "emailAddress": "DKSAW1990@GMAIL.COM",
+            "countryCodeMobile": 91,
+            "phone": {},
+            "countryCode": "91",
+            "roadOrStreet": "Surat City",
+            "pinCode": 395002,
+            "stateCode": "11",
+            "residenceName": "KAMELA DARWAJA"
+        },
+        "filingStatus": {
+            "residentialStatus": "RES"
+        },
+        "assesseVerPan": "DQNPS2064G",
+        "assesseeName": {
+            "firstName": "DEEPAK",
+            "surNameOrOrgName": "SAW",
+            "middleName": "KUMAR"
+        },
+        "dob": "1990-06-05",
+        "aadhaarCardNo": "NTAxODIzMzQyMzQz",
+        "pan": "DQNPS2064G",
+        "assesseeVerName": "DEEPAK KUMAR SAW",
+        "status": "IND",
+        "capacity": "S"
+    },
+    "orgFirmInfo": null,
+    "Form10BA": null,
+    "form10DA": null,
+    "form3CD": {
+        "PartAOI": {
+            "ScheduleTPSAFlg": "N",
+            "Amount": 0
+        }
+    },
+    "scheduleAL": null,
+    "form3CE": null,
+    "form26as": {
+        "scheduleOS": {
+            "incOthThanOwnRaceHorse": {
+                "dividendGross": 118,
+                "DividendOthThan22e": 118
+            }
+        },
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 118,
+                "othSrcNatureDesc": "DIV"
+            },
+            {
+                "othSrcOthAmount": 311,
+                "othSrcNatureDesc": "SAV"
+            }
+        ]
+    },
+    "form10IBICID": null,
+    "otherSourceIncome": null,
+    "form10IE": null,
+    "form10CCE": null,
+    "form10CCF": null,
+    "form10CCD": null,
+    "itba": null,
+    "form64D": null,
+    "verification": {
+        "declaration": {
+            "fatherName": "LALO SAW",
+            "assesseeVerPAN": "DQNPS2064G",
+            "assesseeVerName": "DEEPAK KUMAR SAW"
+        },
+        "capacity": "S"
+    },
+    "bankAccountDtls": [
+        {
+            "addtnlBankDetails": [
+                {
+                    "useForRefund": "true",
+                    "bankAccountNo": "9312367177",
+                    "bankName": "KOTAK MAHINDRA BANK",
+                    "ifsccode": "KKBK0000883"
+                },
+                {
+                    "useForRefund": "false",
+                    "bankAccountNo": "311102010011879",
+                    "bankName": "STATE BANK OF INDIA",
+                    "ifsccode": "SBIN0031110",
+                    "AccountType": "SB"
+                }
+            ]
+        }
+    ],
+    "form56F": null,
+    "insights": {
+        "intrstFrmSavingBank": 311,
+        "scheduleOS": {
+            "incOthThanOwnRaceHorse": {
+                "dividendGross": 118,
+                "DividendOthThan22e": 118
+            }
+        },
+        "incomeDeductionsOthersInc": [
+            {
+                "othSrcOthAmount": 118,
+                "othSrcNatureDesc": "DIV"
+            },
+            {
+                "othSrcOthAmount": 311,
+                "othSrcNatureDesc": "SAV"
+            }
+        ]
+    },
+    "form10CCB": null,
+    "form29b": null,
+    "scheduleCFL": null,
+    "filingStatus": {
+        "OptingNewTaxRegimeForm10IF": 2,
+        "receiptNo": "150469590280724",
+        "returnFileSec": 17,
+        "OptingTaxation115BAE": "N",
+        "origRetFiledDate": "2024-07-28",
+        "OptOutNewTaxRegime": "N"
+    },
+    "form24q": {
+        "intrstFrmSavingBank": 311,
+        "isActive": false
+    },
+    "partAGEN2": null,
+    "ScheduleEI": null,
+    "Form10A": null,
+    "Form10IFA": {
+        "Form10IFAAckNo": 0,
+        "filedForm10IFA": "N"
+    },
+    "ais": null,
+    "ScheduleESOP": null,
+    "formCCBA": null,
+    "auditInfo": null,
+    "incDeductionsOthIncCPC": null,
+    "formCCBD": null,
+    "formCCBC": null,
+    "formCCBB": null,
+    "form67": null,
+    "assesseeRep": null,
+    "form66": null,
+    "form10E": null,
+    "Schedule80RA": null,
+    "Form10IA": null,
+    "Schedule80G": null,
+    "form64A": null,
+    "Form10AB": null,
+    "Form10IEA": {
+        "filedForm10IEA": "N"
+    },
+    "form10IF": {
+        "newTaxRegime": "N"
+    },
+    "form10AC": null,
+    "form10BOR10BB": null,
+    "natOfBus": null,
+    "filingReturn": null,
+    "lastFiledITR": {
+        "foreignBankDetails": [],
+        "usrDeductUndChapVIAType": {
+            "section80DDB": 20000,
+            "section80DDBUsrType": "1"
+        },
+        "natOfBus44AD": [
+            {
+                "description": "",
+                "codeAD": "09024",
+                "nameOfBusiness": "DEEPAK KUMAR SAW"
+            }
+        ],
+        "typeOfHP": "S",
+        "NewTaxRegime": "N",
+        "schedule80D": {
+            "Sec80DSelfFamSrCtznHealth": {
+                "SeniorCitizenFlag": "S",
+                "ParentSeniorCitizenFlag": "P"
+            }
+        },
+        "scheduleUD": [],
+        "scheduleMATC": {},
+        "employerCategory": "OTH",
+        "scheduleAMTC": {},
+        "totalNumOfMonths": 0
+    },
+    "form3CEA": null,
+    "form3CEB": null
+}
