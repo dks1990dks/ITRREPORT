@@ -41,7 +41,7 @@ document.getElementById("GenrateReport").addEventListener("click", () => {
       const inputs = {
         "By Opening Balance": +document.getElementById("opening-balance").value || 0,
         "By Salary Income": +document.getElementById("salary-income").value || 0,
-        "By Income from Retail Business": +document.getElementById("business-income").value || 0,
+        "By Income from Business and Profession": +document.getElementById("business-income").value || 0,
         "By Rent Income": +document.getElementById("rent-income").value || 0,
         "By Income from Commission": +document.getElementById("commission-income").value || 0,
         "By Interest on Saving Bank A/c": +document.getElementById("saving-interest").value || 0,
