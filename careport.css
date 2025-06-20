@@ -1,0 +1,63 @@
+ * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+    }
+
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background-color: #fff;
+      padding: 23px;
+      margin: 23px auto;
+    }
+
+    .container h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    .container h3 {
+      text-align: center;
+      font-size: 16px;
+      font-weight:500;
+    }
+    .container h2{
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 10px;
+      text-decoration: 2px solid underline;
+    }
+    .capital{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .capital table{
+      width: 100%;
+    }
+    .capital table th{
+      border: 1px solid #333;
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+    .capital table td:nth-child(1),td:nth-child(3), th:nth-child(1),:nth-child(3){
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .capital table td:nth-child(2),td:nth-child(4), th:nth-child(2),:nth-child(4){
+      text-align: right;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .capital table tfoot td{
+      font-weight: 500;
+      border: 1px solid;
+      
+    }
+    .capital table tbody{
+      border: 1px solid black;
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital and Balance Sheet</title>
+  <link rel="stylesheet" href="careport.css" />
+  <link rel="stylesheet" href="cainput.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="Input-container">
+    <h3>Create Capital Account</h3>
+
+    <!-- Optional: Basic Details Section -->
+    <!--
+    <div class="basic-inputs">
+      <h3 style="font-size: 17px;">Basic Details</h3>
+      <div class="column1">
+        <label for="business-name">Business Name</label>
+        <input type="text" id="business-name" value="AMRO EXPO FASHION" />
+
+        <label for="business-address">Address</label>
+        <input type="text" id="business-address"
+          value="1035-1037, Shree Kuberji Textile Deck, Kumbharia, Surat - 395010, Gujarat" />
+
+        <label for="pan-number">PAN Number</label>
+        <input type="text" id="pan-number" value="DQNPS2024G" />
+      </div>
+    </div>
+    -->
+
+    <div class="column2">
+      <label for="assessment-year">Assessment Year</label>
+      <input type="text" id="assessment-year" />
+
+      <!-- Optional title field -->
+      <label for="statement-title">Statement Title</label>
+      <input type="text" id="statement-title" value="Capital Account" />
+      
+    </div>
+
+    <div class="capital-inputs">
+      <h3 style="font-size: 17px;">Capital A/c Details</h3>
+      <div class="column1">
+        <h4>Credit Side</h4>
+        <div class="crBalance">
+          <label for="opening-balance">Opening Balance</label>
+          <input type="number" id="opening-balance" />
+
+          <label for="salary-income">Salary Income</label>
+          <input type="number" id="salary-income" />
+
+          <label for="business-income">Income from Retail Business</label>
+          <input type="number" id="business-income" />
+
+          <label for="rent-income">Rent Income</label>
+          <input type="number" id="rent-income" />
+
+          <label for="commission-income">Income from Commission</label>
+          <input type="number" id="commission-income" />
+
+          <label for="saving-interest">Interest on Saving Bank A/c</label>
+          <input type="number" id="saving-interest" />
+
+          <label for="dividend-income">Dividend Income</label>
+          <input type="number" id="dividend-income" />
+
+          <label for="other-income">Other Income</label>
+          <input type="number" id="other-income" />
+        </div>
+
+        <h4>Debit Side</h4>
+        <div class="drBalance">
+          <label for="lic-premium">LIC Insurance Premium</label>
+          <input type="number" id="lic-premium" />
+
+          <label for="pexpences">Personal Expenses</label>
+          <input type="number" id="pexpences" />
+
+          <label for="drawing">Drawing</label>
+          <input type="number" id="drawing" />
+
+          <label for="balance-cf">Balance C/f</label>
+          <input type="number" id="balance-cf" readonly />
+        </div>
+      </div>
+    </div>
+
+    <button id="GenrateReport">Generate Report</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

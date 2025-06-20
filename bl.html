@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balance Sheet</title>
+  <link rel="stylesheet" href="bl.css">
+  <link rel="stylesheet" href="cainput.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Balance Sheet Generator</h1>
+
+    <!-- Header Inputs -->
+    <input type="text" id="assessment-year" placeholder="Assessment Year">
+    <input type="text" id="statement-title" value="Balance Sheet">
+    <input type="text" id="year-ending" placeholder="Year Ending">
+
+    <!-- Liabilities -->
+<h2>Liabilities</h2>
+<input type="number" id="capital" placeholder="Capital">
+<input type="number" id="loans" placeholder="Secured Loans">
+<input type="number" id="creditors" placeholder="Creditors">
+<input type="number" id="bike-loan" placeholder="Bike Loan">
+<input type="number" id="personal-loan" placeholder="Personal Loan">
+<input type="number" id="credit-card" placeholder="Credit Card Outstanding">
+<input type="number" id="consumer-loan" placeholder="Consumer Loan">
+
+<!-- Assets -->
+<h2>Assets</h2>
+<input type="number" id="cash" placeholder="Cash in Hand">
+<input type="number" id="bank" placeholder="Bank Balance">
+<input type="number" id="debtors" placeholder="Debtors">
+<input type="number" id="stock" placeholder="Stock">
+<input type="number" id="mobile" placeholder="Mobile">
+<input type="number" id="bike" placeholder="Bike">
+<input type="number" id="other-assets" placeholder="Other Assets">
+
+    <button id="GenerateBalanceSheet">Generate Balance Sheet</button>
+  </div>
+
+  <script src="bl.js"></script>
+</body>
+</html>
