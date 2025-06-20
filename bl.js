@@ -37,6 +37,7 @@ document.getElementById("GenerateBalanceSheet").addEventListener("click", () => 
         (+document.getElementById("cash").value || 0) +
         (+document.getElementById("lic").value || 0) +
         (+document.getElementById("sip").value || 0) +
+        (+document.getElementById("cash").value || 0) +
         (+document.getElementById("loan-advance").value || 0);
 
       const otherAssets = totalLiabilitiesBalance - (totalAssetsBalance - (+document.getElementById("cash").value || 0));
@@ -47,19 +48,19 @@ document.getElementById("GenerateBalanceSheet").addEventListener("click", () => 
 
       const inputs = {
         "Liabilities": {
-          "Capital": +document.getElementById("capital").value || 0,
+          "Capital A/c": +document.getElementById("capital").value || 0,
           "Secured Loans": +document.getElementById("loans").value || 0,
-          "Creditors": +document.getElementById("creditors").value || 0,
+          "Sundry Creditors": +document.getElementById("creditors").value || 0,
           "Bike Loan": +document.getElementById("bike-loan").value || 0,
           "Personal Loan": +document.getElementById("personal-loan").value || 0,
           "Credit Card Outstanding": +document.getElementById("credit-card").value || 0,
           "Consumer Loan": +document.getElementById("consumer-loan").value || 0
         },
         "Assets": {
-          "Debtors": +document.getElementById("debtors").value || 0,
+          "Sundry Debtors": +document.getElementById("debtors").value || 0,
           "Stock": +document.getElementById("stock").value || 0,
-          "Mobile": +document.getElementById("mobile").value || 0,
-          "Bike": +document.getElementById("bike").value || 0,
+          "Mobile Appliance": +document.getElementById("mobile").value || 0,
+          "Bike - Personal Use": +document.getElementById("bike").value || 0,
           "Lic - Jeevan Anand": +document.getElementById("lic").value || 0,
           "Sip - Mutual Fund": +document.getElementById("sip").value || 0,
           "Loan Advance": +document.getElementById("loan-advance").value || 0,
