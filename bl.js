@@ -34,10 +34,13 @@ document.getElementById("GenerateBalanceSheet").addEventListener("click", () => 
         (+document.getElementById("mobile").value || 0) +
         (+document.getElementById("bike").value || 0) +
         (+document.getElementById("other-assets").value || 0) +
-        (+document.getElementById("cash").value || 0);
+        (+document.getElementById("cash").value || 0) +
+        (+document.getElementById("lic").value || 0) +
+        (+document.getElementById("sip").value || 0) +
+        (+document.getElementById("loan-advance").value || 0);
 
-      const balanceCash = totalLiabilitiesBalance - (totalAssetsBalance - (+document.getElementById("cash").value || 0));
-      document.getElementById("cash").value = balanceCash.toFixed(2);
+      const otherAssets = totalLiabilitiesBalance - (totalAssetsBalance - (+document.getElementById("cash").value || 0));
+      document.getElementById("other-assets").value = otherAssets.toFixed(2);
 
 
 
@@ -57,6 +60,9 @@ document.getElementById("GenerateBalanceSheet").addEventListener("click", () => 
           "Stock": +document.getElementById("stock").value || 0,
           "Mobile": +document.getElementById("mobile").value || 0,
           "Bike": +document.getElementById("bike").value || 0,
+          "Lic - Jeevan Anand": +document.getElementById("lic").value || 0,
+          "Sip - Mutual Fund": +document.getElementById("sip").value || 0,
+          "Loan Advance": +document.getElementById("loan-advance").value || 0,
           "Other Assets": +document.getElementById("other-assets").value || 0,
           "Bank Balance": +document.getElementById("bank").value || 0,
           "Cash in Hand": +document.getElementById("cash").value || 0
