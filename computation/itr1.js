@@ -59,8 +59,6 @@ async function FetchData() {
     let declaredProfit = +document.getElementById(`declairedProfit`).value || 0;
     declaredProfit = Math.round((businessGrossrcvd * declaredProfit) / 100);
     let declaredProfitratio = Math.round(+document.getElementById(`declairedProfit`).value || 0);
-    let grossTotalIncome = (NetSalary + declaredProfit + Incomefromothersrc) - deduction
-
     let regime = document.getElementById(`regime`).value
     
 
@@ -372,8 +370,8 @@ async function FetchData() {
                 <tr>
                     <td colspan="" class="tds-total">Total</td>
                     <td colspan="" class="tds-total"> </td>
-                    <td class="tds-total" style="text-align: right;">${grossTotalIncome}</td>
-                    <td colspan="" class="tds-total" style="text-align: right;" >${grossTotalIncome + deduction}</td>
+                    <td class="tds-total" style="text-align: right;">${(basicSalary+declaredProfit+Incomefromothersrc)-(deductionVI6+deduction)}</td>
+                    <td colspan="" class="tds-total" style="text-align: right;" >${(basicSalary+declaredProfit+Incomefromothersrc)}</td>
                     
                 </tr>
             </table>
@@ -438,8 +436,9 @@ async function FetchData() {
 
     // Tax calculation for both Regime
 
-    const income = grossTotalIncome;
-    console.log(income);
+    const oldRegimeIncome = (basicSalary+declaredProfit+Incomefromothersrc)-(deductionVI6+deduction);
+    const newRegimeIncome = (basicSalary+declaredProfit+Incomefromothersrc);
+    console.log(`${newRegimeIncome},${oldRegimeIncome}`);
 
     const oldRegimeSlabs = [
       { min: 0, max: 250000, rate: 0 },
@@ -482,8 +481,8 @@ async function FetchData() {
       }
       return { taxBreakdown, totalTax: totalTax }
     }
-    const oldTax = calculateTax(income, oldRegimeSlabs)
-    const newTax = calculateTax(income, newRegimeSlabs)
+    const oldTax = calculateTax(oldRegimeIncome, oldRegimeSlabs)
+    const newTax = calculateTax(newRegimeIncome, newRegimeSlabs)
     console.log(oldTax, newTax);
 
     const tableBody = document.getElementById(`taxTableBody`)
