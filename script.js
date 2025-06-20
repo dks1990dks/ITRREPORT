@@ -1,7 +1,7 @@
 document.getElementById("GenrateReport").addEventListener("click", () => {
   async function FetchData() {
     try {
-      const response = await fetch("/computation/GELPM1877J-Prefill-2025.json");
+      const response = await fetch("computation/GELPM1877J-Prefill-2025.json");
       const data = await response.json();
       console.log(data.personalInfo);
 
