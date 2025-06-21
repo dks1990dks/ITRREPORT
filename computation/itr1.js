@@ -59,7 +59,8 @@ async function FetchData() {
     let declaredProfit = +document.getElementById(`declairedProfit`).value || 0;
     declaredProfit = Math.round((businessGrossrcvd * declaredProfit) / 100);
     let declaredProfitratio = Math.round(+document.getElementById(`declairedProfit`).value || 0);
-    let regime = document.getElementById(`regime`).value
+    let regime = document.getElementById(`regime`).value;
+    let grossTotalIncome = regime==="New Regime"? (basicSalary+declaredProfit+Incomefromothersrc) :(basicSalary+declaredProfit+Incomefromothersrc)-(deductionVI6+deduction);
     
 
 
